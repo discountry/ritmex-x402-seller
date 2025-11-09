@@ -16,7 +16,7 @@ export const proxy = paymentMiddleware(
     },
     '/protected/api/date': {
       price: '$0.01',
-      network: "base-sepolia", // for mainnet, see Running on Mainnet section
+      network: "solana-devnet", // for mainnet, see Running on Mainnet section
       config: {
         description: 'Access to paid date API',
         // Optional: Add schemas for better discovery
@@ -24,7 +24,7 @@ export const proxy = paymentMiddleware(
     },
     '/protected/video': {
       price: '$0.01',
-      network: "base-sepolia", // for mainnet, see Running on Mainnet section
+      network: "solana-devnet", // for mainnet, see Running on Mainnet section
       config: {
         description: 'Access to paid video',
       }
