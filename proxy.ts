@@ -7,7 +7,7 @@ export const proxy = paymentMiddleware(
   {  // Route configurations for protected endpoints
     '/protected': {
       price: '$0.01',
-      network: "base-sepolia", // for mainnet, see Running on Mainnet section
+      network: "solana-devnet", // for mainnet, see Running on Mainnet section
       config: {
         description: 'Access to protected content',
         // Optional: Add schemas for better discovery
@@ -16,7 +16,7 @@ export const proxy = paymentMiddleware(
     },
     '/protected/api/date': {
       price: '$0.01',
-      network: "base-sepolia", // for mainnet, see Running on Mainnet section
+      network: "solana-devnet", // for mainnet, see Running on Mainnet section
       config: {
         description: 'Access to paid date API',
         // Optional: Add schemas for better discovery
@@ -24,14 +24,14 @@ export const proxy = paymentMiddleware(
     },
     '/protected/video': {
       price: '$0.01',
-      network: "base-sepolia", // for mainnet, see Running on Mainnet section
+      network: "solana-devnet", // for mainnet, see Running on Mainnet section
       config: {
         description: 'Access to paid video',
       }
     },
   },
   {
-    url: "https://x402.org/facilitator", // for testnet
+    url: "https://facilitator.payai.network", // for testnet
   }
 );
 
